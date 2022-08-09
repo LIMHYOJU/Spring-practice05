@@ -31,7 +31,7 @@ public class AppCtx {
 	public PlatformTransactionManager transactionManager() {
 		DataSourceTransactionManager tm = new DataSourceTransactionManager();
 		tm.setDataSource(dataSource());
-		return TM
+		return tm;
 	}
 	
 	@Bean
