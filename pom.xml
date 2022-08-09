@@ -27,16 +27,16 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-	  <groupId>org.springframework</groupId>
-	  <artifactId>spring-context</artifactId>
-	  <version>5.0.2.RELEASE</version>
-	</dependency>
-	<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-context</artifactId>
+        <version>5.0.2.RELEASE</version>
+    </dependency>
+    <dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>tomcat-jdbc</artifactId>
       <version>9.0.65</version>
-	</dependency>
-	<dependency>
+    </dependency>
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
       <version>5.0.2.RELEASE</version>
