@@ -2,6 +2,7 @@ package springTest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import dao.MemberDao;
 
@@ -11,6 +12,7 @@ public class ChangePasswordSerive {
 	@Autowired
 	private MemberDao memberDao;
 	
+	@Transactional
 	public void changePassword(String email, String oldPwd, String newPwd) {
 		Member member = memberDao.selectByEmail(email);
 		if (member == null) 

@@ -2,14 +2,17 @@ package config;
 
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import dao.MemberDao;
+import springTest.ChangePasswordSerive;
 
 @Configuration
+@ComponentScan(basePackages = {"dao","springTest"})
 @EnableTransactionManagement
 public class AppCtx {
 	
